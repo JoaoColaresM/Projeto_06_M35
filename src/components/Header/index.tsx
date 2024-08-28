@@ -6,11 +6,13 @@ import { Link } from 'react-router-dom'
 const Header = () => (
   <HeaderBar>
     <div>
-      <img src={logo} alt="EPLAY" />
+      <Link to='/'>
+        <img src={logo} alt="EPLAY" />
+      </Link>
       <nav>
         <Links>
           <LinkItem>
-          <Link to='/categories'>Categorias</Link>
+            <Link to='/categories'>Categorias</Link>
           </LinkItem>
           <LinkItem>
             <a href='#'>Novidades</a>
